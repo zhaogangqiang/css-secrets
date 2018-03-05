@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>title</title>
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <style>
+html
+{
+font-size: 10px;
+}
+.common
+{
+max-width: 28rem;
+min-height: 19rem;
+margin: 2rem auto 0;
+}
+.one
+{
+background-color: #fff;
+background-image: linear-gradient(90deg, rgba(200, 0, 0, .5) 50%, transparent 0),
+                  linear-gradient(rgba(200, 0, 0, .5) 50%, transparent 0);
+background-size: 3rem 3rem;
+}
+.two
+{
+background-color: #58a;
+background-image: linear-gradient(90deg, hsla(0, 0%, 100%, .5) .1rem, transparent 0),
+                  linear-gradient(hsla(0, 0%, 100%, .5) .1rem, transparent 0);
+background-size: 2rem 2rem;
+}
+.three
+{
+background-color: #58a;
+background-image: linear-gradient(90deg, hsla(0, 0%, 100%, .5) .1rem, transparent 0),
+                  linear-gradient(hsla(0, 0%, 100%, .5) .1rem, transparent 0),
+                  linear-gradient(90deg, #fff .2rem, transparent 0),
+                  linear-gradient(#fff .2rem, transparent 0);
+background-size: 2rem 2rem, 2rem 2rem, 6rem 6rem, 6rem 6rem;
+}
+.four
+{
+background-color: #58a;
+background-image: radial-gradient(tan 30%, transparent 0);
+background-size: 3rem 3rem;
+background-position: 1.5rem 1.5rem;
+}
+.five
+{
+background-color: #58a;
+background-image: radial-gradient(tan 30%, transparent 0),
+                  radial-gradient(tan 30%, transparent 0);
+background-size: 3rem 3rem;
+background-position: 0 0, 1.5rem 1.5rem;
+}
+.six
+{
+background-color: #eee;
+background-image: linear-gradient(45deg, #bbb 25%, transparent 0, transparent 75%, #bbb 0),
+                  linear-gradient(45deg, #bbb 25%, transparent 0, transparent 75%, #bbb 0);
+background-size: 3rem 3rem;
+background-position: 0 0, 1.5rem 1.5rem;
+}
+.svg
+{
+background: #eee url('data:image/svg+xml,\
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill-opacity=".25"> \
+                <rect x="50" width="50" height="50" /> \<rect y="50" width="50" height="50" /> \
+                </svg>');
+background-size: 3rem 3rem;
+}
+    </style>
+
+  </head>
+  <body>
+    <div class='common one'></div>
+    <div class='common two'></div>
+    <div class='common three'></div>
+    <div class='common four'></div>
+    <div class='common five'></div>
+    <div class='common six'></div>
+    <div class='common svg'></div>
+  </body>
+</html>

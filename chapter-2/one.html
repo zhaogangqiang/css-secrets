@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>title</title>
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <style>
+html
+{
+font-size: 10px;
+}
+body
+{
+background: url(http://csssecrets.io/images/stone-art.jpg) no-repeat;
+background-size: cover;
+}
+.border
+{
+border-radius:.5rem;
+background:white;
+font: italic bolder 1rem/1.5 sans-serif;
+padding: 2rem;
+max-width: 18rem;
+margin: 2rem auto 0;
+}
+.border-1
+{
+border: 1rem dotted hsla(0,100%,50%,1);
+}
+.border-2
+{
+border: 1rem solid hsla(0,0%,100%,.5);
+background-clip: padding-box;
+}
+/*box-shadow*/
+.shadow
+{
+background:yellowgreen;
+padding: 2rem;
+max-width: 16.8rem;
+margin: 4rem auto 0;
+border-radius: .3rem;
+}
+.shadow-1
+{
+box-shadow:0 0 0 1rem #655,
+           0 0 0 1.5rem deeppink,
+           .1rem .2rem .4rem 1.5rem hsla(0,0%,0%,.4);
+}
+.shadow-2
+{
+box-shadow:.1rem .2rem .4rem hsla(0,0%,0%,.4),
+           0 0 0 .5rem deeppink inset,
+           0 0 0 1.5rem #655 inset;
+}
+.shadow-3
+{
+box-shadow:.1rem .2rem .4rem hsla(0,0%,0%,.4),
+           0 0 0 1rem #655 inset,
+           0 0 0 1.5rem deeppink inset;
+}
+/*out-line*/
+.outline
+{
+color: white;
+outline:.1rem dashed ;
+outline-offset: -1rem;
+}
+/*background*/
+.background
+{
+border: 1.5rem dashed white;
+border-radius: .3rem;
+color: white;
+font: italic bolder 2rem/1.5 sans-serif;
+padding: 1.5rem;
+background: yellowgreen url(http://csssecrets.io/images/code-pirate.svg) no-repeat bottom right;
+min-height: 8rem;
+max-width: 28rem;
+margin:4rem auto 0;
+}
+.backgroundpos
+{
+background-position: bottom 1rem right 2rem;
+}
+.calc
+{
+background-position: calc(100% - 2rem) calc(100% - 1rem);
+}
+.backgroundorigin
+{
+background-origin: content-box;
+}
+.backgroundclip
+{
+background-clip: content-box;
+background-origin: content-box;
+}
+/*inner-rounding*/
+.outter
+{
+color: white;
+font: italic bolder 2rem/1.5 sans-serif;
+padding: 1.5rem;
+background: #655;
+max-width: 31rem;
+margin:4rem auto 0;
+}
+.outter > div
+{
+background: tan;
+border-radius: 1.2rem;
+padding: 1.6rem;
+}
+.one-element
+{
+box-shadow: 0 0 0 .6rem #655;
+color: white;
+font: italic bolder 2rem/1.5 sans-serif;
+max-width: 28rem;
+margin:4rem auto 0;
+background: tan;
+border-radius: 1.2rem;
+padding: 1.6rem;
+outline: 1.5rem solid #655;
+}
+    </style>
+  </head>
+  <body>
+  <div class='border border-1'>Can I has semi-transparent broder? Pretty please?</div>
+  <div class='border border-2'>Can I has semi-transparent broder? Pretty please?</div>
+  <div class='shadow shadow-1'>Can I has multiple-broder? Pretty please?</div>
+  <div class='shadow shadow-2'>Can I has multiple-broder? Pretty please?</div>
+  <div class='shadow outline'>outline</div>
+  <div class='background backgroundpos'>Background position</div>
+  <div class='background calc'>Background calc() 方案</div>
+  <div class='background backgroundorigin'>Background origin 方案</div>
+  <div class='background backgroundclip'>Background-clip</div>
+  <div class='outter'><div class='inner'>The two elements solution of the inner-rounding!</div></div>
+  <div class='one-element'>The one element solution of the inner-rounding!</div>
+
+  </body>
+</html>

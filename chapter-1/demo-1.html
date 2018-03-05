@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>title</title>
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html
+{
+font-size: 10px;
+}
+button
+{
+padding: .3em 1em;
+border: 1px solid rgba(0,0,0,.1);
+background: linear-gradient(hsla(0,0%,100%,.2), transparent);
+background-color: #58a;
+border-radius: .2em;
+box-shadow: 0 .05em .25em rgba(0,0,0,.5);
+color: white;
+text-shadow: 0 -0.05em 0.25em rgba(0,0,0,.5);
+font-size: 2rem;
+line-height: 1.5;
+}
+button.ok
+{
+  background-color: #6b0;
+}
+button.cancel
+{
+  background-color: #c00;
+}
+/*输入框提示*/
+.callout
+{
+position: relative;
+margin-top: .4rem;
+width: 17rem;
+padding: 1rem .8rem;
+background:#fecd57;
+border: .1em solid rgba(0, 0, 0,.2);
+border-radius: .3em;
+box-shadow: 0.1em 0.2em 0.3em rgba(0,0,0,.2);
+word-break: break-all;
+text-align: justify;
+} .callout::before
+{
+content: '';
+position: absolute;
+top:-.5em;
+left: 1em;
+padding: .35em;
+background: inherit;
+border: inherit;
+border-right: 0;
+border-bottom: 0;
+transform: rotate(45deg);
+}
+
+    </style>
+  </head>
+  <body>
+    <p>Hello!</p>
+    <button>Yes!</button>
+    <button class='ok'>OK</button>
+    <button class='cancel'>Cancel</button>
+    <p> Your username:</p>
+    <input name='username' type='text'/>
+    <p class='callout'>Only letters, numbers, underscores(_) and hyphens(-) allowded!</p>
+  </body>
+</html>
